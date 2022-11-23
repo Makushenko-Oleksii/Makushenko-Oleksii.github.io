@@ -5,7 +5,6 @@ const dateCreation = document.querySelector('.date-creation');
 const repositories = document.querySelector('.repositories');
 
 const showUser = (user) => {
-    // userImg.textContent = user.;
     userInfo.innerHTML = `${user.login}`;
     userFollower.innerHTML = `${user.followers} follower  ${user.following} following`;
     userImg.src = `${user.avatar_url}`;
