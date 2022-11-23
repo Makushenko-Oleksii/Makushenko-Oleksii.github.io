@@ -54,11 +54,6 @@ function outRepos(info) {
         name.innerHTML = `имя: ${elem.name}`
         out.append(name);
         name.addEventListener('click', function () {
-            console.log(info.length)
-            let pLength = document.querySelectorAll('p');
-
-
-
             const branch = document.createElement('p');
             branch.classList.add('branch', 'mt-3');
             name.append(branch);
