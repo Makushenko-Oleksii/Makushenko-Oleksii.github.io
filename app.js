@@ -9,7 +9,7 @@ const showUser = (user) => {
     userInfo.innerHTML = `${user.login}`;
     userFollower.innerHTML = `${user.followers} follower  ${user.following} following`;
     userImg.src = `${user.avatar_url}`;
-    dateCreation.textContent = `${user.created_at}`;
+    dateCreation.textContent = `${new Date(user.created_at).toLocaleString()}`;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -53,11 +53,12 @@ function outRepos(info) {
         name.classList.add('name', 'fw-bolder');
         name.innerHTML = `имя: ${elem.name}`
         out.append(name);
-        name.addEventListener('click', () => {
+        name.addEventListener('click', function () {
             console.log(info.length)
             let pLength = document.querySelectorAll('p');
-            // console.log(pLength.length)
-            // if (pLength.length > 6) return;
+
+
+
             const branch = document.createElement('p');
             branch.classList.add('branch', 'mt-3');
             name.append(branch);
@@ -73,9 +74,9 @@ function outRepos(info) {
             const pushAt = document.createElement('p');
             pushAt.classList.add('push-at');
             name.append(pushAt);
-            pushAt.innerHTML = `дата последнего изменения: ${elem.pushed_at}`;
+            pushAt.innerHTML = `дата последнего изменения: ${ new Date(elem.pushed_at).toLocaleString()}`;
 
-        })
+        }, {once:true})
 
     })
 }
