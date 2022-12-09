@@ -1,8 +1,9 @@
 
 fetch("https://api.github.com/users/Makushenko-Oleksii").then(data => {
     document.querySelector('.loader-mask').classList.remove('none');
-    if(data.ok) {
+    if(data.status === 200) {
         document.querySelector('.loader-mask').classList.add('none');
+        console.log('hello')
     }
 })
 
