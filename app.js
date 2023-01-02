@@ -1,12 +1,8 @@
 const FETCH_URL = ("https://api.github.com/users/Makushenko-Oleksii");
-document.addEventListener('DOMContentLoaded', init)
-fetch(FETCH_URL).then(data => {
-    document.querySelector('.loader-mask').classList.remove('none');
-    if(data.status === 200) {
-        document.querySelector('.loader-mask').classList.add('none');
-    }
-});
-    const url = 'https://api.github.com/users/Makushenko-Oleksii/repos';
+document.addEventListener('DOMContentLoaded', init);
+
+
+const REPOS_URL = `${FETCH_URL}/repos`;
 
     function init() {
         const userInfo = document.querySelector('.js-user-info');
@@ -14,11 +10,17 @@ fetch(FETCH_URL).then(data => {
         const userFollower = document.querySelector('.js-user-follower')
         const dateCreation = document.querySelector('.js-date-creation');
 
-        fetch(FETCH_URL).then(response => {
+        fetch(FETCH_URL)
+            .then(response => {
+            if(response.status === 200) document.querySelector('.loader-mask').classList.add('none')
+            else document.querySelector('.loader-mask').classList.remove('none');
             return response.json();
-        }).then((json) => {
+        })
+            .then((json) => {
             showUser(json)
-        });
+
+        })
+
 
         const showUser = (user) => {
             userInfo.innerHTML = `${user.login}`;
@@ -35,7 +37,7 @@ fetch(FETCH_URL).then(data => {
             })
         }
 
-        getRepos(url);
+        getRepos(REPOS_URL);
 
         function outRepos(info) {
             let out = document.querySelector('.out');
