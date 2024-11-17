@@ -5,10 +5,28 @@ body {
     margin: 0;
 }
 
-.main {
-    margin-top: 133px;
-    flex: 1; /* Заполняет доступное пространство */
+.classes__title {
+    margin: 50px 0;
+    flex: 1;
     padding: 20px;
+}
+
+.classes__content {
+    display: flex;
+    gap: 20px;
+}
+
+.classes__card_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+
+.classes__card_title {
+    font-size: 36px;
+    text-align: center;
 }
 
 footer {
