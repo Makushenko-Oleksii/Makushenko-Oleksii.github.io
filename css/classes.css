@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    margin-top: 133px;
+    flex: 1; /* Заполняет доступное пространство */
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+}

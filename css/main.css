@@ -1,0 +1,152 @@
+body  {
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 18px;
+}
+
+/*------------header-----------*/
+header {
+    background-color: #114169;
+}
+
+.container {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.logo  {
+    width: 300px;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 32px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+/*------------greetings----------*/
+.greetings {
+    margin: 133px 0 100px 0;
+
+}
+
+.greetings__content {
+    display: flex;
+}
+
+.greetings__content img {
+    width: 569px;
+    height: 602px;
+    margin-right: 97px;
+}
+
+.greetings__title {
+    font-size: 56px;
+}
+
+.greetings__author {
+    font-weight: bold;
+    width: 270px;
+    margin-bottom: 15px;
+}
+
+.greetings__greet_1, .greetings__greet_2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.greetings__main_text {
+    text-align: justify;
+}
+
+/*------------acquaintance-----------*/
+
+.acquaintance {
+    background-color: rgba(204, 209, 215, 0.3);
+}
+
+.acquaintance__content {
+    padding-top: 134px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.acquaintance__about_myself, .acquaintance__about_him {
+    max-width: 576px;
+}
+
+.about__him_title, .about__myself_title {
+    margin: 30px 0 20px 0;
+    font-size: 32px;
+}
+
+.acquaintance__about_him button {
+    margin: 26px 0 62px 0;
+    background-color: #2D8EAC;
+    color: #fff;
+    padding: 18px 57px 18px 27px;
+    position: relative;
+}
+
+.acquaintance__about_him button img, .acquaintance__about_myself button img{
+    position: absolute;
+    top: 27px;
+    right: 20px;
+}
+
+
+.acquaintance__about_myself button {
+    margin: 56px 0 62px 0;
+    background-color: #2D8EAC;
+    color: #fff;
+    padding: 18px 57px 18px 27px;
+    position: relative;
+}
+
+/*----------footer----------*/
+footer {
+    background-color: #114169;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 132px;
+}
+
+.footer__logo a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer__email {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer__email i {
+    margin-right: 10px;
+}
