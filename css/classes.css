@@ -1,35 +1,10 @@
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-}
-
-.classes__title {
-    margin: 50px 0;
-    flex: 1;
-    padding: 20px;
-}
-
 .classes__content {
     display: flex;
-    gap: 40px;
-    margin-bottom: 100px;
-}
-
-.classes__card_column {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
-    flex: 1;
+    flex-wrap: wrap;
 }
 
-
-.classes__card_title {
-    font-size: 36px;
-    text-align: center;
-}
-
-footer {
-    margin-top: auto;
+.last_card {
+    display: flex;
+    gap:20px;
 }
