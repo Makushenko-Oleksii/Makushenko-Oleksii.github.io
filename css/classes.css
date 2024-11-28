@@ -1,10 +1,18 @@
+.classes__title {
+    font-size: 36px;
+    line-height: 41px;
+    margin: 95px 0 ;
+}
+
 .classes__content {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.last_card {
-    display: flex;
-    gap:20px;
+.classes__item_title {
+    font-size: 36px;
+    line-height: 1px;
+    text-align: center;
+    margin: 24px 0 ;
 }
