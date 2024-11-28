@@ -6,8 +6,9 @@
 
 .classes__content {
     display: flex;
-    gap: 20px;
+    gap: 32px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .classes__item_title {
@@ -15,4 +16,9 @@
     line-height: 1px;
     text-align: center;
     margin: 24px 0 ;
+}
+
+.classes__item_image:hover {
+    background-color: #FFFFFF99;
+    opacity: 0.6;
 }
