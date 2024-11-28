@@ -68,7 +68,7 @@ nav {
 .greetings__author {
     font-weight: bold;
     width: 270px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .greetings__greet_1, .greetings__greet_2 {
@@ -78,6 +78,7 @@ nav {
 
 .greetings__main_text {
     text-align: justify;
+    margin-top: 30px;
 }
 
 /*------------acquaintance-----------*/
