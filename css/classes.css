@@ -9,6 +9,7 @@
     gap: 32px;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    justify-content: space-around;
 }
 
 .classes__item_title {
@@ -21,4 +22,5 @@
 .classes__item_image:hover {
     background-color: #FFFFFF99;
     opacity: 0.6;
+    transition: all 0.40s;
 }
