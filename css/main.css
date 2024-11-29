@@ -48,7 +48,10 @@ nav {
 /*------------greetings----------*/
 .greetings {
     margin: 133px 0 100px 0;
+}
 
+.greetings__author img {
+    display: flex;
 }
 
 .greetings__content {
@@ -57,9 +60,6 @@ nav {
 
 .greetings__content img {
     margin-right: 97px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain
 }
 
 .greetings__title {
@@ -93,6 +93,7 @@ nav {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 
