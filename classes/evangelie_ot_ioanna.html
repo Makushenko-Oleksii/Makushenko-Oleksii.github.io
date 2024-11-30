@@ -34,22 +34,24 @@
         <img src="../images/shepard.png" alt="пастух" class="banner-classes">
 
 
-        <div class="audio-player">
-            <button class="play-pause-btn">
-                <img class="play-icon" src="../images/play.png" alt="Play" style="display: block;">
-                <img class="pause-icon" src="../images/pause.png" alt="Pause" style="display: none;">
-            </button>
-            <input type="range" class="progress-bar" value="0" min="0" max="100">
-            <div class="volume-container">
-                <button class="volume-btn">
-                    <img src="/images/volume.png" alt="Volume" width="21" height="22">
+        <div class="audio">
+            <h3 class="audio-player-title">13.04.2000</h3>
+            <div class="audio-player">
+                <button class="play-pause-btn">
+                    <img class="play-icon" src="../images/play.png" alt="Play" style="display: block;">
+                    <img class="pause-icon" src="../images/pause.png" alt="Pause" style="display: none;">
                 </button>
-                <input class="volume-control" type="range" min="0" max="1" step="0.1" value="1">
-                <span class="volume-percentage">50%</span>
+                <input type="range" class="progress-bar" value="0" min="0" max="100">
+                <div class="volume-container">
+                    <button class="volume-btn">
+                        <img src="/images/volume.png" alt="Volume" width="21" height="22">
+                    </button>
+                    <input class="volume-control" type="range" min="0" max="1" step="0.1" value="1">
+                    <span class="volume-percentage">50%</span>
+                </div>
+                <audio id="audio" src="../La%20Campanella%20Rondo.mp3"></audio>
             </div>
-            <audio id="audio" src="../La%20Campanella%20Rondo.mp3"></audio>
         </div>
-
 
     </div>
 </main>

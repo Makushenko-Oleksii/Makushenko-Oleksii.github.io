@@ -29,7 +29,9 @@
     margin-bottom: 140px;
 }
 
-
+.audio-player-title {
+    margin-bottom: 20px;
+}
 
 /* Контейнер плеера */
 .audio-player {
@@ -120,6 +122,6 @@
 }
 
 .volume-percentage {
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
 }
