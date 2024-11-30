@@ -68,7 +68,6 @@
 
 .progress-bar {
     flex: 1; /* Заполняет оставшееся пространство */
-    max-width: 85%; /* Устанавливаем максимальную ширину */
     height: 6px;
     appearance: none;
     background: #ccc;
@@ -118,4 +117,9 @@
     border: none;
     cursor: pointer;
     padding: 0;
+}
+
+.volume-percentage {
+    font-size: 14px;
+    color: #fff;
 }
