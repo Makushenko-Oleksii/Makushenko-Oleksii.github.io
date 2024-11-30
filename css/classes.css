@@ -28,3 +28,47 @@
 .banner-classes {
     margin-bottom: 140px;
 }
+
+
+
+/* Контейнер плеера */
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2D8EAC; /* Цвет заднего фона */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка воспроизведения/паузы */
+.play-pause-btn,
+.volume-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Шкала прогресса */
+.progress-bar {
+    flex: 1; /* Заполняет всё доступное пространство */
+    appearance: none; /* Убирает стандартный стиль */
+    height: 5px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Стили для бегунка шкалы прогресса */
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #4682b4;
+}

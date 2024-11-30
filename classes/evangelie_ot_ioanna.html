@@ -26,15 +26,26 @@
         </nav>
     </div>
 </header>
+
+
 <main class="classes">
     <div class="container">
         <h2 class="classes__title">Евангелие от Иоанна</h2>
         <img src="../images/shepard.png" alt="пастух" class="banner-classes">
+
+
         <div class="audio-player">
-            <audio id="audio" controls>
-                <source src="../La%20Campanella%20Rondo.mp3" type="audio/mpeg">
-                Ваш браузер не поддерживает аудиоэлемент.
-                </audio>
+            <button class="play-pause-btn">
+                <img class="play-icon" src="../images/play.png" alt="Play" style="display: block;">
+                <img class="pause-icon" src="../images/pause.png" alt="Pause" style="display: none;">
+            </button>
+            <input type="range" class="progress-bar" value="0" min="0" max="100">
+            <button class="volume-btn">
+                <img class="play-icon" src="../images/volume.png" alt="Play" style="display: block;">
+            </button>
+            <audio id="audio" src="../La%20Campanella%20Rondo.mp3"></audio>
+        </div>
+
     </div>
 </main>
 
@@ -50,5 +61,6 @@
         </div>
     </div>
 </footer>
+<script src="../app.js"></script>
 </body>
 </html>
