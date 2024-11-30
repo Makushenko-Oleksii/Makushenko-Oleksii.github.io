@@ -39,6 +39,7 @@
     background-color: #2D8EAC; /* Цвет заднего фона */
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
 }
 
 /* Кнопка воспроизведения/паузы */
@@ -51,16 +52,6 @@
     cursor: pointer;
 }
 
-/* Шкала прогресса */
-.progress-bar {
-    flex: 1; /* Заполняет всё доступное пространство */
-    appearance: none; /* Убирает стандартный стиль */
-    height: 5px;
-    border-radius: 5px;
-    background: white;
-    cursor: pointer;
-    outline: none;
-}
 
 /* Стили для бегунка шкалы прогресса */
 .progress-bar::-webkit-slider-thumb {
@@ -71,4 +62,60 @@
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid #4682b4;
+}
+
+
+
+.progress-bar {
+    flex: 1; /* Заполняет оставшееся пространство */
+    max-width: 85%; /* Устанавливаем максимальную ширину */
+    height: 6px;
+    appearance: none;
+    background: #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.volume-control {
+    width: 100px;
+    appearance: none;
+    height: 6px;
+    background: #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.volume-control::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
