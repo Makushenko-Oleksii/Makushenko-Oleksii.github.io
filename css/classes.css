@@ -125,3 +125,11 @@
     font-size: 13px;
     color: #fff;
 }
+
+
+.current-time,
+.remaining-time {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 10px;
+}

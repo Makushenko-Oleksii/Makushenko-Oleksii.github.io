@@ -37,3 +37,33 @@ volumeControl.addEventListener('input', (event) => {
     const volumePercent = Math.round(event.target.value * 100); // Преобразуем в проценты
     volumePercentage.textContent = `${volumePercent}%`; // Обновляем текст
 });
+
+
+
+
+// Элементы времени
+const currentTimeEl = document.querySelector('.current-time');
+const remainingTimeEl = document.querySelector('.remaining-time');
+
+// Форматирование времени
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+    return `${minutes}:${seconds}`;
+}
+
+// Установка общего времени трека при загрузке
+audio.addEventListener('loadedmetadata', () => {
+    remainingTimeEl.textContent = formatTime(audio.duration); // Устанавливаем общее время
+});
+
+// Обновление времени и прогресса при воспроизведении
+audio.addEventListener('timeupdate', () => {
+    const currentTime = audio.currentTime; // Текущее время
+    const remainingTime = audio.duration - currentTime; // Оставшееся время
+
+    currentTimeEl.textContent = formatTime(currentTime); // Обновляем текущее время
+    remainingTimeEl.textContent = formatTime(remainingTime); // Обновляем оставшееся время
+
+    progressBar.value = (currentTime / audio.duration) * 100; // Обновляем шкалу прогресса
+});
