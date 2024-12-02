@@ -4,6 +4,11 @@
     margin: 95px 0 ;
 }
 
+.classes img {
+    margin: 0 auto;
+
+}
+
 .classes__content {
     display: flex;
     gap: 32px;
@@ -33,7 +38,14 @@
     margin-bottom: 20px;
 }
 
+
+
 /* Контейнер плеера */
+ 
+.audio {
+    margin-top: 50px;
+}
+
 .audio-player {
     display: flex;
     align-items: center;
