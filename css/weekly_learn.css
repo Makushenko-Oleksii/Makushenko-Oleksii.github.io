@@ -1,0 +1,18 @@
+.weekly_learn_wrapper {
+    background-color: rgba(204, 209, 215, 0.3);
+
+}
+
+.weekly_learn_title {
+    font-size: 36px;
+    line-height: 41px;
+    margin: 95px 0 ;
+}
+
+.weekly_learn_content {
+    padding: 100px 0;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,9 +1,10 @@
 // Элементы плеера
-const audio = document.getElementById('audio');
+const audio = document.querySelector('audio');
 const playPauseBtn = document.querySelector('.play-pause-btn');
 const progressBar = document.querySelector('.progress-bar');
 const volumeControl = document.querySelector('.volume-control');
 const volumePercentage = document.querySelector('.volume-percentage');
+
 
 // Установка громкости по умолчанию
 audio.volume = 0.5; // Громкость аудио 50%
