@@ -10,9 +10,24 @@
 }
 
 .weekly_learn_content {
+    max-width: 1440px;
     padding: 100px 0;
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.weekly_learn__title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 23px;
+}
+
+.weekly_learn_image:hover {
+    background-color: #FFFFFF99;
+    opacity: 0.6;
+    transition: all 0.40s;
 }
